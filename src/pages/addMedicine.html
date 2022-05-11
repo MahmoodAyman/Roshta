@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../assets/styles/all.min.css" />
+    <link rel="stylesheet" href="../../assets/styles/bootstrap.css" />
+    <link rel="stylesheet" href="../../assets/styles/normalize.css" />
+    <link rel="stylesheet" href="../../assets/styles/main.css" />
+    <title>Add Medicine</title>
+</head>
+
+<body>
+    <!-- <div class="small-screens">
+      <h1>This Page Only avilable to desktop</h1>
+    </div> -->
+    <nav class="navbar navbar-expand-lg navbarDashboard">
+        <div class="container">
+            <a class="navbar-brand" href="../../index.html">
+                <img src="../../assets/images/Logo.png" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <i class="fa-solid fa-house d-lg-none"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">contact Us </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="navigation-content">
+        <div class="dashboard-navigation">
+            <div class="navbar-brand">Your Dashborad</div>
+            <hr />
+            <div class="navbar">
+                <ul class="navbar-items">
+                    <li class="navbar-item">
+                        <i class="fa-solid fa-house-user nav-item-icon"><a href="pharmacyHomePage.html"
+                                class="nav-item-title"></a></i>
+                        <a href="pharmacyHomePage.html" class="nav-item-title">Home Page</a>
+                    </li>
+                    <li class="navbar-item">
+                        <i class="fa-solid fa-file-prescription nav-item-icon"></i>
+                        <a href="sellroshta.html" class="nav-item-title">Sell Roshta</a>
+                    </li>
+                    <li class="navbar-item active">
+                        <i class="fa-solid fa-capsules nav-item-icon"></i>
+                        <a href="addMedicine.html" class="nav-item-title">Add Medicine</a>
+                    </li>
+                    <li class="navbar-item">
+                        <i class="fa-solid fa-cash-register nav-item-icon"></i>
+                        <a href="sellMedicine.html" class="nav-item-title">Sell Medicine</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="dashboardHeader"></section>
+
+    <main class="contentArea">
+        <div class="pageTitle">
+            <h3>Add Medicine</h3>
+        </div>
+        <div class="addMedicineForm">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-lg-5">
+                        <div class="wrap">
+                            <form class="addingMedicine">
+                                <div class="form-group mt-2 mb-3">
+                                    <input type="text" class="MedicineEName controller" />
+                                    <label for="MedicineEName">Medicine Name in English?</label>
+                                </div>
+                                <div class="form-group mt-2 mb-3">
+                                    <input type="text" class="MedicineAName controller" />
+                                    <label for="MedicineAName">Medicine Name in Arabic?</label>
+                                </div>
+                                <div class="form-group mt-2 mb-3">
+                                    <input type="text" class="MedicineType controller" />
+                                    <label for="MedicineType">Medicine Type</label>
+                                </div>
+                                <div class="form-group mt-2 mb-3">
+                                    <input type="month" class="MedicineEDate controller" />
+                                    <label for="MedicineEDate">Medicine Expire Date Monthe-Year</label>
+                                </div>
+                                <div class="form-group mt-2 mb-3">
+                                    <input type="text" class="MedicineCode controller" />
+                                    <label for="MedicineCode">Bar Code</label>
+                                </div>
+                                <div class="form-group mt-2 mb-3">
+                                    <input type="number" class="MedicineQuantity controller" />
+                                    <label for="MedicineQuantity">Quantity (Number)</label>
+                                </div>
+                                <div class="form-group mt-2 mb-3">
+                                    <input type="text" class="MedicineCompany controller" />
+                                    <label for="MedicineEName">Producing Company</label>
+                                </div>
+                                <div class="form-group mt-2 mb-3">
+                                    <input type="number" step="0.01" class="MedicinePrice controller" />
+                                    <label for="MedicinePrice">Price?</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <input type="submit" class="saveMedicine" value="Add Medicine" />
+            </div>
+        </div>
+    </main>
+    <script src="../../assets/scripts/all.min.js"></script>
+    <script src="../../assets/scripts/bootstrap.bundle.js"></script>
+    <script src="../../assets/scripts/main.js"></script>
+    <script src="../../assets/scripts/jquery-3.6.0.js"></script>
+</body>
+
+</html>

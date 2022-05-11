@@ -1,0 +1,43 @@
+@use "sass/colors" as *;
+@use "sass/fonts";
+@use "sass/global";
+.contact-us{
+
+    .formbox{
+        .form-title{
+            margin-top:20px;
+        }
+    }
+    .contactusForm{
+        margin-top:20px;
+        display:flex;
+        flex-direction: column;
+        gap:20px;
+        justify-content:flex-start;
+        .form-group{
+            justify-content: center;
+            label{
+                margin-right:10px;
+            }
+            input{
+                width:200px;
+                height:30px;
+                border-radius: 5px;
+                box-shadow: none;
+                &:focus-visible{
+                    border-color: $blueColorDark;
+                }
+            }
+        }
+        .dnbtn{
+            input{
+                background-color: $redColorDark;
+                color:white;
+                font-weight: bold;
+                border-radius: 5px;
+                border-color: transparent;
+                }
+                text-align: center;
+        }
+    }
+}
