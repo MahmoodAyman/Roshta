@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../assets/styles/all.min.css" />
+    <link rel="stylesheet" href="../../assets/styles/bootstrap.css" />
+    <link rel="stylesheet" href="../../assets/styles/normalize.css" />
+    <link rel="stylesheet" href="../../assets/styles/main.css" />
+    <title>Sell Medicine</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbarDashboard">
+      <div class="container">
+        <a class="navbar-brand" href="../../index.html">
+          <img src="../../assets/images/Logo.png" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">
+                <i class="fa-solid fa-house d-lg-none"></i>
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">contact Us </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="navigation-content">
+      <div class="dashboard-navigation">
+        <div class="navbar-brand">Your Dashborad</div>
+        <hr />
+        <div class="navbar">
+          <ul class="navbar-items">
+            <li class="navbar-item">
+              <i class="fa-solid fa-house-user nav-item-icon"
+                ><a href="pharmacyHomePage.html" class="nav-item-title"></a
+              ></i>
+              <a href="pharmacyHomePage.html" class="nav-item-title"
+                >Home Page</a
+              >
+            </li>
+            <li class="navbar-item">
+              <i class="fa-solid fa-file-prescription nav-item-icon"></i>
+              <a href="sellroshta.html" class="nav-item-title">Sell Roshta</a>
+            </li>
+            <li class="navbar-item">
+              <i class="fa-solid fa-capsules nav-item-icon"></i>
+              <a href="addMedicine.html" class="nav-item-title">Add Medicine</a>
+            </li>
+            <li class="navbar-item active">
+              <i class="fa-solid fa-cash-register nav-item-icon"></i>
+              <a href="sellMedicine.html" class="nav-item-title"
+                >Sell Medicine</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="dashboardHeader"></section>
+    <section class="contentArea">
+      <div class="inputMedicine">
+        <div class="pageTitle">
+          <h3>Sell Medicine</h3>
+        </div>
+        <div class="row">
+          <div class="form-container col-lg-7 col-md-5">
+            <div class="MedicineData">
+              <div class="inputForm formbox">
+                <form class="inputMedicineForm">
+                  <div class="form-group">
+                    <label for="medicineName">Medicine Name</label>
+                    <input
+                      type="text"
+                      class="medicineName controller"
+                      id="medicineName"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="medicineQuantity">Quantity</label>
+                    <input
+                      type="number"
+                      value="1"
+                      id="medicineQuantity"
+                      class="controller"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="medicinePrice">Price</label>
+                    <input
+                      type="number"
+                      value="0.00"
+                      step="0.01"
+                      id="medicinePrice"
+                      class="controller"
+                    />
+                  </div>
+                  <div class="addToEnvoice form-group">
+                    <button type="submit" onclick="addToEnvoice()" >Add to Invoice</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contentArea invoice">
+      <div class="invoicePaper">
+        <div class="invoiceHeader">
+          <div class="invoiceLogo">
+            <img class="img-fluid" src="/assets/images/Logo.png" />
+            <h3>invoice Id</h3>
+            <h3>Pharmacy Name</h3>
+          </div>
+          <div class="invoiceDate">
+            <!-- <div id="invoicedate"></div> -->
+            22-4-2022
+          </div>
+        </div>
+        <div class="invoiceContent">
+          <table class="invoiceDetaile">
+            <tr>
+              <th>Medicine Name</th>
+              <th>Medicine Quantity</th>
+              <th>Price of One</th>
+              <th>total Price</th>
+            </tr>
+            <tbody id="invoiceTabelBody">
+              <tr>
+                <td>Medicine</td>
+                <td>quantity</td>
+                <td>price of one</td>
+                <td>total Price</td>
+                <td><button class="editOnMedicine">Edit</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="EditOnInvoice">
+        <input type="submit" value="Save Invoice" />
+        <button class="">Print Invoice</button>
+      </div>
+    </section>
+    <script src="../../assets/scripts/all.min.js"></script>
+    <script src="../../assets/scripts/bootstrap.bundle.js"></script>
+    <script src="../../assets/scripts/jquery-3.6.0.js"></script>
+    <script src="../../assets/scripts/pharmacyinvoice.js"></script>
+  </body>
+</html>
